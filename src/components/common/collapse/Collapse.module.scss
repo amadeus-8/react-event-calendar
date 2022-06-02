@@ -1,0 +1,37 @@
+@import '../../../scss/abstract/variables';
+
+.collapseBtnContainer {
+    padding: 0 5px;
+    display: flex;
+}
+
+.collapseBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: $palette-white;
+    color: $palette-scarpa-flow;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    outline: none;
+}
+
+.container {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s height;
+}
+
+.expanded {
+    height: 100%;
+    display: block;
+}

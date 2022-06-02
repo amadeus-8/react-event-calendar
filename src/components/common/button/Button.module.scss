@@ -1,0 +1,105 @@
+$main-color: #ffd400;
+$default-color: #d5d5d5;
+$disabled-color: #e4e7ee;
+
+.container {
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.75;
+    letter-spacing: 0.5px;
+    //min-width: 64px;
+    cursor: pointer;
+    transition: all 0.3s;
+    //margin: 8px;
+}
+
+.main {
+    background-color: $main-color;
+
+    &:hover {
+        background-color: rgba(255, 212, 0, 0.81);
+        box-shadow: 0 0 10px rgba(255, 212, 0, 0.4);
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid $main-color;
+    }
+
+    &.outlined:hover {
+        box-shadow: none;
+        background-color: rgba(255, 212, 0, 0.4);
+    }
+}
+
+.default {
+    background-color: $default-color;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(213, 213, 213, 0.4);
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid $default-color;
+    }
+
+    &.outlined:hover {
+        box-shadow: none;
+        background-color: rgba(213, 213, 213, 0.4);
+    }
+}
+
+.white {
+    background-color: transparent;
+    //color: #fff;
+    color: #13152d;
+
+    &:hover {
+        box-shadow: none;
+        background-color: #fafafa;
+    }
+
+    &.outlined {
+        background-color: transparent;
+        //border: 1px solid #fff;
+        border: 2px solid #d4d7df;
+    }
+
+    &.outlined:hover {
+        box-shadow: none;
+        background-color: #fafafa;
+    }
+}
+
+.transparent {
+    background-color: transparent;
+    color: #13152d;
+
+    &:hover {
+        box-shadow: none;
+        background-color: #fafafa;
+    }
+
+    &.outlined {
+        background-color: transparent;
+        border: 2px solid #d4d7df;
+    }
+
+    &.outlined:hover {
+        box-shadow: none;
+        background-color: #fafafa;
+    }
+}
+
+.disabled {
+    background-color: $disabled-color;
+    color: #8f929d;
+    pointer-events: none;
+}

@@ -1,0 +1,50 @@
+.wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000000000;
+}
+
+.fixed {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.loader {
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.small {
+    border: 2px solid #f3f3f3;
+    width: 16px;
+    height: 16px;
+}
+
+.large {
+    border: 16px solid #f3f3f3;
+    width: 120px;
+    height: 120px;
+}
+
+.primary {
+    border-top-color: #ffe14d;
+}
+
+.dark {
+    border-top-color: #1f1f1f;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

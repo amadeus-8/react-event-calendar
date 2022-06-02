@@ -1,0 +1,15 @@
+@import '../../../../scss/abstract/variables';
+
+.container {
+  border-radius: 24px;
+  background-color: $palette-white;
+  border: 1px solid $palette-mishka;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: 992px) {
+    padding: 45px 36px;
+  }
+}

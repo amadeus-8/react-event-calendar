@@ -1,5 +1,5 @@
 @mixin custom-min-width($screen) {
-  @media (min-width: $screen + 'px') {
-    @content;
-  }
+    @media (min-width: $screen + 'px') {
+        @content;
+    }
 }

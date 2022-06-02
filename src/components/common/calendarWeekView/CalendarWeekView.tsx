@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
 
 export const CalendarWeekView: FC = () => {
-    return <div></div>
+    return <div />
 }

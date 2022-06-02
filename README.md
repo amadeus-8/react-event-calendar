@@ -18,13 +18,14 @@
 ```
 
 ## Package manager
+
 -   Project uses **npm** package manager
 
 ## Scripts
 
-- `npm run dev` — Development mode
-- `npm run build` — Production mode
-- `npm run start` — Run development mode on localhost. The project will start on `http://localhost:8080`
+-   `npm run dev` — Development mode
+-   `npm run build` — Production mode
+-   `npm run start` — Run development mode on localhost. The project will start on `http://localhost:8080`
 
 ## Git flow and branches
 

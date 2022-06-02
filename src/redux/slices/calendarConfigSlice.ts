@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import dayjs from 'dayjs'
+import { RootState } from '../reducers/rootReducer'
 
 type ViewType = 'day' | 'week' | 'month'
 
@@ -20,5 +21,8 @@ const calendarConfigSlice = createSlice({
     initialState,
     reducers: {},
 })
+
+export const calendarSelector = (state: RootState): iInitialState =>
+    state.calendarConfig
 
 export default calendarConfigSlice.reducer

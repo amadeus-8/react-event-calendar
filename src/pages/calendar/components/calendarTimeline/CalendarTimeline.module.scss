@@ -1,0 +1,13 @@
+@import '../../../../scss/abstract/variables';
+
+.cell {
+    min-height: 80px;
+}
+
+.time {
+    display: inline-block;
+    padding: 0 0.5rem;
+    width: 100%;
+    text-align: right;
+    color: $palette-storm-gray;
+}

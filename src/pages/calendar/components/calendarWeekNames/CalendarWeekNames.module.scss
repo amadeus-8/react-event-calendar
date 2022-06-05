@@ -1,0 +1,98 @@
+@import '../../../../scss/abstract/variables';
+
+.cell {
+    background-color: $palette-alabaster;
+    min-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $palette-storm-gray;
+    padding: 0.2rem 0;
+    font-size: 12px;
+    border-right: 1px solid $palette-white;
+    border-bottom: 1px solid $palette-white;
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid $palette-athens-gray;
+    }
+
+    @media (max-width: 400px) {
+        padding: 0;
+    }
+}
+
+.weekName {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+.weekDay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    width: 33px;
+}
+
+.currentDay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $palette-sun;
+    color: $palette-white;
+}
+
+.timeline {
+}
+
+.weekDays {
+}
+
+.monthContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: $palette-white;
+
+    @media (min-width: 992px) {
+        grid-gap: 4px;
+        margin-bottom: 4px;
+    }
+}
+
+.weekContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    //border: 2px solid $palette-athens-gray;
+    border: 1px solid $palette-athens-gray;
+
+    .cell {
+        border-radius: 0;
+        border: 0;
+        border-right: 1px solid $palette-athens-gray;
+    }
+    .cell:last-child {
+        border-right: 0;
+    }
+}
+
+.dayContainer {
+    display: flex;
+    align-items: center;
+    background-color: $palette-alabaster;
+    //border: 2px solid $palette-athens-gray;
+    border: 1px solid $palette-athens-gray;
+    color: $palette-storm-gray;
+    padding: 1rem;
+}
+
+.weekend {
+    color: $palette-red-orange;
+}

@@ -6,6 +6,7 @@ import '../../scss/app.scss'
 import App from './components/App'
 import store from '../../redux/store/store'
 import sentryInit from '../../services/sentry'
+import '../../api/mirage'
 
 sentryInit()
 

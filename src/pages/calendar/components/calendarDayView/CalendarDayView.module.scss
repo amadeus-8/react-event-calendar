@@ -1,0 +1,58 @@
+@import '../../../../scss/abstract/variables';
+
+.container {
+    display: grid;
+    grid-template-columns: 8% 1fr;
+    max-height: 550px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        left: 10px;
+        width: 0;
+    }
+}
+
+.weekNamesContainer {
+    display: grid;
+    grid-template-columns: 8% 1fr;
+}
+
+.dayHours {
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    //border: 2px solid $palette-athens-gray;
+    border: 1px solid $palette-athens-gray;
+    border-top: 0;
+    position: relative;
+}
+
+.dayRows {
+    min-height: 80px;
+    background-color: $palette-alabaster;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $palette-athens-gray;
+    position: relative;
+
+    &:nth-last-of-type(2) {
+        border: 0;
+    }
+}
+
+.divider {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px dashed $palette-athens-gray;
+}
+
+.timeNow {
+    position: absolute;
+    border-bottom: 1px solid $palette-red-orange;
+    width: 100%;
+    z-index: 20;
+}
+
+.weekend {
+    background-color: $palette-whisper;
+    color: $palette-red-orange;
+}

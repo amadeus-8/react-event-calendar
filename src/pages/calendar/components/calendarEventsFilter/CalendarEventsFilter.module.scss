@@ -1,0 +1,69 @@
+@import '../../../../scss/abstract/variables';
+
+.container {
+    padding: 10px;
+}
+
+.title {
+    color: $palette-ebony;
+    margin: 0 2px 15px;
+}
+
+.filtersContainer {
+    @media (min-width: 992px) {
+        margin-bottom: 20px;
+    }
+}
+
+.filterGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.filterLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    &:hover {
+        color: $palette-sun;
+    }
+}
+
+.filterName {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 6px;
+    line-height: 24px;
+}
+
+.filterDisabled {
+    color: $palette-mishka;
+    pointer-events: none;
+}
+
+.orderTraining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid $palette-sun;
+    color: $palette-sun;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: 0.4s ease;
+
+    &:hover {
+        background-color: $palette-sun;
+        color: $palette-white;
+    }
+}

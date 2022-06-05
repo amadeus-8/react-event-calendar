@@ -1,0 +1,89 @@
+@import '../../../../scss/abstract/variables';
+
+.container {
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid $palette-athens-gray;
+    margin-bottom: 20px;
+    max-width: 275px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15px 4px 15px 11px;
+    color: $palette-ebony;
+}
+
+.monthName {
+    display: flex;
+    align-items: center;
+}
+
+.headerTitle {
+    margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    span {
+        display: inline-block;
+        margin-right: 0.3rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        padding: 0;
+    }
+}
+
+.weekNames {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 8px;
+    color: $palette-scarpa-flow;
+}
+
+.weekNameCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.datePickerBody {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.cell {
+    font-size: 12px;
+    min-height: 36.275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $palette-scarpa-flow;
+    cursor: pointer;
+
+    &:hover {
+        border-radius: 50%;
+        background-color: $palette-alto;
+    }
+}
+
+.currentDay {
+    border-radius: 50%;
+    background-color: $palette-sun;
+    color: $palette-white;
+}
+
+.inactiveDay {
+    opacity: 0.5;
+}

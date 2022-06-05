@@ -1,0 +1,57 @@
+@import '../../../../scss/abstract/variables';
+
+.container {
+    padding: 10px;
+    max-height: 170px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        left: 10px;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $palette-storm-gray;
+        border-radius: 5px;
+    }
+}
+
+.title {
+    color: $palette-ebony;
+    margin: 0 0 15px;
+}
+
+.closestEvent {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.eventDate {
+    color: $palette-scarpa-flow;
+    font-size: 14px;
+    line-height: 20px;
+
+    span {
+        display: inline-block;
+    }
+
+    span:last-child {
+        margin-left: 8px;
+    }
+}
+
+.eventName {
+    line-height: 20px;
+    font-size: 14px;
+
+    a {
+        color: $palette-ebony;
+        transition: 0.4s;
+    }
+
+    a:hover {
+        color: $palette-sun;
+    }
+}

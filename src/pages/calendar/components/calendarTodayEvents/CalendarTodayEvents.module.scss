@@ -1,0 +1,115 @@
+@import '../../../../scss/abstract/variables';
+
+.eventItem {
+    position: absolute;
+    width: 100%;
+    padding: 0.2rem;
+    text-overflow: ellipsis;
+    border: 1px solid #f8f8f84b;
+    z-index: 1;
+    background-color: $palette-magic-mint;
+}
+
+.eventDescription {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $palette-scarpa-flow;
+}
+
+.eventMoment {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.noEvents {
+    color: $palette-ebony;
+    font-size: 14px;
+}
+
+.currentDay {
+    font-weight: bold;
+    color: $palette-ebony;
+    display: inline-block;
+}
+
+.currentWeekDay {
+    color: $palette-ebony;
+    margin-left: 5px;
+}
+
+.eventContainer {
+    display: flex;
+    border: 1px solid #d4d7df;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.event {
+    display: flex;
+    width: 100%;
+}
+
+.eventBorder {
+    width: 4px;
+    border-radius: 5px;
+    height: 100%;
+    background-color: $palette-magic-mint;
+}
+
+.close {
+    background-color: $palette-athens-gray;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.eventName {
+    line-height: 20px;
+    font-size: 14px;
+    padding-left: 0.5rem;
+
+    a {
+        color: $palette-ebony;
+        transition: 0.4s;
+    }
+
+    a:hover {
+        color: $palette-sun;
+    }
+}
+
+.eventDate {
+    padding-left: 0.5rem;
+    color: $palette-scarpa-flow;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.eventsContainer {
+    flex: 1 0 auto;
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.noEventsImage {
+    margin-top: 1rem;
+    width: 100%;
+
+    @media (min-width: 450px) {
+        width: 80%;
+    }
+}

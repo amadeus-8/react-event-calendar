@@ -1,18 +1,18 @@
 import React from 'react'
 import MediaQuery from 'react-responsive'
 
-import { CalendarDayViewDesktop } from './CalendarDayViewDesktop'
-import { CalendarDayViewMobile } from './CalendarDayViewMobile'
+import { CalendarMonthViewDesktop } from './CalendarMonthViewDesktop'
+import { CalendarMonthViewMobile } from './CalendarMonthViewMobile'
 import { LG } from '../../../../utils/breakpoints'
 
-export const CalendarDayView: React.FC = () => {
+export const CalendarMonthView: React.FC = () => {
     return (
         <>
             <MediaQuery minWidth={LG}>
-                <CalendarDayViewDesktop />
+                <CalendarMonthViewDesktop />
             </MediaQuery>
             <MediaQuery maxWidth={LG - 1}>
-                <CalendarDayViewMobile />
+                <CalendarMonthViewMobile />
             </MediaQuery>
         </>
     )

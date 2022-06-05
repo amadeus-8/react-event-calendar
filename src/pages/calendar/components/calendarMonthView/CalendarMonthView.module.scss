@@ -1,0 +1,93 @@
+@import '../../../../scss/abstract/variables';
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: $palette-white;
+
+    @media (min-width: 992px) {
+        grid-gap: 4px;
+    }
+}
+
+.cell {
+    min-height: 80px;
+    background-color: $palette-alabaster;
+    color: $palette-storm-gray;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 12px;
+    border-bottom: 1px solid $palette-white;
+    border-right: 1px solid $palette-white;
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid $palette-athens-gray;
+    }
+}
+
+.dayRow {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 776px) {
+        justify-content: flex-end;
+    }
+}
+
+.inactiveDay {
+    opacity: 0.5;
+}
+
+.dayWrapper {
+    height: 29px;
+    width: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+
+    @media (min-width: 992px) {
+        height: 33px;
+        width: 33px;
+        margin: 4px;
+    }
+}
+
+.currentDay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $palette-sun;
+    color: $palette-white;
+}
+
+.weekend {
+    background-color: $palette-whisper;
+    color: $palette-red-orange;
+}
+
+.events {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 776px) {
+        justify-content: center;
+    }
+}
+
+.eventsDot {
+    width: 5px;
+    height: 5px;
+    background-color: $palette-magic-mint;
+    border-radius: 50%;
+
+    @media (min-width: 776px) {
+        margin-right: 14px;
+    }
+}
